@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>sahitya_links</title>
   <style>
-  body {
+html, body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
@@ -13,12 +13,14 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  overflow: auto; /* Allow vertical scrolling */
   overflow-x: hidden; /* Prevent horizontal scrolling */
+  overflow-y: auto; /* Allow vertical scrolling */
   position: relative;
+  height: 100%; /* Make sure the body takes full height */
   background: linear-gradient(to bottom, #000000, #090a0f); /* Dark tech-themed gradient */
   color: rgb(255, 244, 244);
 }
+
 
 
 
