@@ -16,6 +16,8 @@
       overflow: auto; /* Allow scrolling */
       position: relative;
       height: 100vh; /* Ensure the body takes up the full height of the viewport */
+      background: linear-gradient(to bottom, #000000, #090a0f); /* Dark tech-themed gradient */
+      color: rgb(255, 244, 244);
     }
 
     /* Tech-themed particle animation for background */
@@ -56,12 +58,6 @@
         opacity: 0;
       }
     }
-
-    body {
-  background: linear-gradient(to bottom, #000000, #090a0f); /* Dark tech-themed gradient */
-  color: rgb(255, 244, 244);
-}
-
 
     .sahitya-header {
       margin-top: 20px;
@@ -168,18 +164,17 @@
     }
 
     .sahitya-footer a {
-  color: white;
-  text-decoration: underline;
-  font-family: 'Roboto', sans-serif; /* Best font for modern designs */
-  padding-bottom: 8px; /* Add padding to the bottom */
-  transition: color 0.3s, text-decoration 0.3s; /* Smooth transition for hover effect */
-}
+      color: white;
+      text-decoration: underline;
+      font-family: 'Roboto', sans-serif; /* Best font for modern designs */
+      padding-bottom: 8px; /* Add padding to the bottom */
+      transition: color 0.3s, text-decoration 0.3s; /* Smooth transition for hover effect */
+    }
 
-.sahitya-footer a:hover {
-  color: #4CAF50; /* Change the color on hover (green as an example) */
-  text-decoration: none; /* Remove underline on hover */
-}
-
+    .sahitya-footer a:hover {
+      color: #4CAF50; /* Change the color on hover (green as an example) */
+      text-decoration: none; /* Remove underline on hover */
+    }
 
     /* Snowfall Animation */
     .snowflakes {
@@ -239,11 +234,10 @@
     <div class="particle" style="top: 60%; left: 90%; animation-delay: 1s;"></div>
   </div>
 
- 
   <div class="sahitya-header">
     <img src="images/zlogo.png" alt="Logo">
     <div class="sahitya-title">ZEAL</div>
-    <div class="sahitya-subtitle">Presents Most Awaited fest</div>
+    <div class="sahitya-subtitle">Presents Most Awaited Fest</div>
   </div>
   <div class="sahitya-tabs">
     <!-- Add Tab Content here -->
@@ -251,63 +245,62 @@
   <div class="sahitya-cards">
     <div class="sahitya-card">
       <a href="https://example.com/sahitya-tech-meme" target="_blank">
-        <img src="images\TECH MEME.png" alt="Tech Meme">
+        <img src="images/TECH MEME.png" alt="Tech Meme">
         <div class="sahitya-card-title">Tech Meme</div>
       </a>
     </div>
     <div class="sahitya-card">
       <a href="https://example.com/sahitya-canva-design" target="_blank">
-        <img src="images\CANVA DESIGN.png" alt="Canva Design">
+        <img src="images/CANVA DESIGN.png" alt="Canva Design">
         <div class="sahitya-card-title">Canva Design</div>
       </a>
     </div>
     <div class="sahitya-card">
       <a href="https://example.com/sahitya-logo-design" target="_blank">
-        <img src="images\CODE BATTLE.jpg" alt="Logo Design">
+        <img src="images/CODE BATTLE.jpg" alt="Logo Design">
         <div class="sahitya-card-title">Code Battle</div>
       </a>
     </div>
     <div class="sahitya-card">
       <a href="https://example.com/sahitya-art-design" target="_blank">
-        <img src="images\CHESS.jpg" alt="Art Design">
+        <img src="images/CHESS.jpg" alt="Art Design">
         <div class="sahitya-card-title">Chess</div>
       </a>
     </div>
-
     <div class="sahitya-card">
       <a href="https://example.com/sahitya-canva-design" target="_blank">
-        <img src="images\CANVA DESIGN.png" alt="Canva Design">
+        <img src="images/CANVA DESIGN.png" alt="Canva Design">
         <div class="sahitya-card-title">Canva Design</div>
       </a>
     </div>
     <div class="sahitya-card">
       <a href="https://example.com/sahitya-logo-design" target="_blank">
-        <img src="images\trading.png" alt="Logo Design">
+        <img src="images/trading.png" alt="Logo Design">
         <div class="sahitya-card-title">ACTIVE TRADING</div>
       </a>
     </div>
     <div class="sahitya-card">
       <a href="https://example.com/sahitya-art-design" target="_blank">
-        <img src="images\bgmi.jpg" alt="Art Design">
+        <img src="images/bgmi.jpg" alt="Art Design">
         <div class="sahitya-card-title">BGMI</div>
       </a>
     </div>
     <div class="sahitya-card">
-      <a href="images\BUG BUTSER.jpg" target="_blank">
-        <img src="images\BUG BUTSER.jpg" alt="Art Design">
+      <a href="images/BUG BUTSER.jpg" target="_blank">
+        <img src="images/BUG BUTSER.jpg" alt="Art Design">
         <div class="sahitya-card-title">BUG BUTSER</div>
       </a>
     </div>
     <div class="sahitya-card">
-      <a href="images\BUG BUTSER.jpg" target="_blank">
-        <img src="images\SWIFT KEY.webp" alt="Art Design">
+      <a href="images/BUG BUTSER.jpg" target="_blank">
+        <img src="images/SWIFT KEY.webp" alt="Art Design">
         <div class="sahitya-card-title">SWIFT KEY</div>
       </a>
     </div>
     <div class="sahitya-card">
       <a href="https://t.me/skmods_000" target="_blank">
-        <img src="images\premium.png" alt="Art Design">
-        <div class="sahitya-card-title">Get Premium APPS Free</div>
+        <img src="images/premium.png" alt="Art Design">
+        <div class="sahitya-card-title">Get Premium Apps Free</div>
       </a>
     </div>
   </div>
@@ -322,12 +315,4 @@
       let snowflake = document.createElement('div');
       snowflake.classList.add('snowflake');
       snowflake.style.left = Math.random() * 100 + '%';
-      snowflake.style.animationDuration = Math.random() * 5 + 5 + 's'; // Random speed between 5s and 10s
-      snowflakes.appendChild(snowflake);
-      setTimeout(function() {
-        snowflake.remove();
-      }, 10000); // Remove snowflake after animation
-    }, 100);
-  </script>
-</body>
-</html>
+      snowflake.style.animationDuration = Math.random() * 5 + 5
