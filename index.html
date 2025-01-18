@@ -13,10 +13,17 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  overflow: auto; /* Allow scrolling */
+  overflow: auto; /* Allow vertical scrolling */
   position: relative;
   min-height: 100vh; /* Ensure the body takes up at least the full height of the viewport */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
 }
+
+html, body {
+  width: 100%;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
 
 
     /* Tech-themed particle animation for background */
