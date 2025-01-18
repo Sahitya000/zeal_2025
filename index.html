@@ -349,23 +349,6 @@
     Designed by <a href="#">Sahitya</a>
   </div>
 
-  <script>
-    // JavaScript for Snowfall effect
-    setInterval(function() {
-      let snowflakes = document.querySelector('.snowflakes');
-      let snowflake = document.createElement('div');
-      snowflake.classList.add('snowflake');
-      snowflake.style.left = Math.random() * 100 + '%';
-      snowflake.style.animationDuration = Math.random() * 5 + 5 + 's';
-      let size = Math.random() * 5 + 5 + 'px'; 
-      snowflake.style.width = size;
-      snowflake.style.height = size;
-      snowflakes.appendChild(snowflake);
 
-      setTimeout(function() {
-        snowflake.remove();
-      }, parseFloat(snowflake.style.animationDuration) * 1000);
-    }, 100); // Create a new snowflake every 100ms
-  </script>
 </body>
 </html>
