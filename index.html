@@ -161,16 +161,18 @@
     }
 
     .sahitya-footer a {
-      color: white;
-      text-decoration: underline;
-      font-family: 'Roboto', sans-serif;
-      padding-bottom: 8px;
-      transition: color 0.3s, text-decoration 0.3s;
-    }
-      .sahitya-footer a:hover {
-        color: #4CAF50;
-        text-decoration: none;
-      }
+  color: white;
+  text-decoration: underline; 
+  font-family: 'Roboto', sans-serif;
+  padding-bottom: 8px;
+  transition: color 0.3s, transform 0.3s; 
+}
+
+.sahitya-footer a:hover {
+  color: #4CAF50; 
+  text-decoration: none; 
+  transform: translateY(-5px); 
+}
 
       /* sahitya_fall_event*/
       
@@ -181,12 +183,12 @@
     width: 100%;
     height: 100%;
     pointer-events: none;
-    z-index: 1; /* Ensure snowflakes are visible above background particles */
+    z-index: 1; 
   }
 
   .snowflake {
     position: absolute;
-    top: -10px; /* Start just above the viewport */
+    top: -10px; 
     background-color: white;
     border-radius: 50%;
     opacity: 0.8;
@@ -248,33 +250,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
- 
-  <!-- server sheet-->
+  <title>Rounded Tabs with Icons</title>
+  <!-- online_sheet -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-<body style="margin: 0; font-family: Arial, sans-serif;">
+<body style="margin: 0; font-family: Arial, sans-serif; background-color: transparent;">
 
-  <!--sahitya_nav -->
-  <div style="display: flex; justify-content: center; background-color: #0074D9; padding: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
-    <!--sahitya_locat -->
-    <a href="https://hudle.in/venues/maharashtra-turf-club-mtc-mazgaon/943578" target="_blank" style="color: white; text-decoration: none; font-size: 16px; margin: 0 15px; display: flex; align-items: center;">
+  <!-- sahitya_nav -->
+  <div style="display: flex; justify-content: center; gap: 10px; margin: 20px 0;">
+
+    <!-- Lsahitya_locate -->
+    <a href="https://www.google.com/maps" target="_blank" style="color: white; text-decoration: none; font-size: 16px; padding: 10px 20px; background-color: #0074D9; border-radius: 20px; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
       <i class="fas fa-map-marker-alt" style="margin-right: 8px; font-size: 18px;"></i> Location
     </a>
 
-    <!--sahitya_ig-->
-    <a href="https://www.instagram.com/siddharth_college_bscit?igsh=cDRuanlvbjNoZGR3" target="_blank" style="color: white; text-decoration: none; font-size: 16px; margin: 0 15px; display: flex; align-items: center;">
+    <!-- sahitya_ig-->
+    <a href="https://www.instagram.com/siddharth_college_bscit?igsh=cDRuanlvbjNoZGR3" target="_blank" style="color: white; text-decoration: none; font-size: 16px; padding: 10px 20px; background-color: #E1306C; border-radius: 20px; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
       <i class="fab fa-instagram" style="margin-right: 8px; font-size: 18px;"></i> Instagram
     </a>
+
   </div>
 
 </body>
 </html>
-
-
-  </div>
-  <div class="sahitya-tabs">
-    <!-- Add Tab Content here -->
-  </div>
   <div class="sahitya-cards">
     <div class="sahitya-card">
       <a href="https://forms.gle/Lq2cdSADC7QU8re9A" target="_blank">
@@ -369,7 +367,7 @@
     </div>
   </div>
   <div class="sahitya-footer">
-    Designed by <a href="#">Sahitya</a>
+     <a href="https://t.me/skmods">Powered by Sahitya</a>
   </div>
 
 
