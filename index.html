@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -41,6 +42,7 @@
     transform: translate3d(100vw, 100vh, 0);
   }
 }
+
 @keyframes fadeParticle {
   0%, 100% {
     opacity: 1;
@@ -49,27 +51,34 @@
     opacity: 0;
   }
 }
+
+
     .sahitya-header {
       margin-top: 20px;
     }
+
     .sahitya-header img {
       width: 100px;
       height: auto;
     }
+
     .sahitya-title {
       font-size: 24px;
       font-weight: bold;
       margin: 10px 0;
     }
+
     .sahitya-subtitle {
       font-size: 16px;
       color: gray;
     }
+
     .sahitya-tabs {
       display: flex;
       margin: 20px 0;
       gap: 10px;
     }
+
     .sahitya-tab {
       padding: 10px 20px;
       border-radius: 20px;
@@ -77,26 +86,31 @@
       cursor: pointer;
       transition: background-color 0.3s, color 0.3s;
     }
+
     .sahitya-tab-active {
       background-color: #555;
       color: white;
     }
+
     .sahitya-tab-inactive {
       background-color: #ddd;
       color: #555;
     }
+
     .sahitya-cards {
       display: grid;
       gap: 15px;
       padding: 20px;
       grid-template-columns: repeat(3, 1fr);
     }
+
     /* For sahitya_mobile screens, make the grid 2 colmn */
     @media (max-width: 600px) {
       .sahitya-cards {
         grid-template-columns: repeat(2, 1fr);
       }
     }
+
     .sahitya-card {
       background-color: white;
       border-radius: 10px;
@@ -109,17 +123,21 @@
       transition: transform 0.3s ease-in-out;
       padding: 20px;
     }
+
     .sahitya-card img {
       width: 80px;
       height: 80px;
       margin-bottom: 10px;
     }
+
     .sahitya-card:hover {
       transform: scale(1.05);
     }
+
     .sahitya-card:active {
   animation: sahitya-bounce 0.3s;
 }
+
 @keyframes sahitya-bounce {
   0%, 100% {
     transform: translateY(0);
@@ -128,15 +146,22 @@
     transform: translateY(-10px);
   }
 }
+
 .sahitya-card-title {
   font-size: 14px;
   font-weight: bold;
 }
+
+
     a {
       text-decoration: none;
       color: black;
     }
-    /* sahitya_fall_event*/   
+
+
+
+      /* sahitya_fall_event*/
+      
   .snowflakes {
     position: absolute;
     top: 0;
@@ -146,6 +171,7 @@
     pointer-events: none;
     z-index: 1; 
   }
+
   .snowflake {
     position: absolute;
     top: -10px; 
@@ -154,6 +180,7 @@
     opacity: 0.8;
     animation: snowfall 10s linear infinite;
   }
+
   @keyframes snowfall {
     0% {
       transform: translateY(0);
@@ -167,10 +194,63 @@
       opacity: 0;
     }
   }
+
+     /* Sahitya_loating_button */
+     .floating-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 60px;
+      height: 60px;
+      background-color: #0088cc; /* Telegram blue color */
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+      z-index: 1000;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .floating-btn:hover {
+      transform: scale(1.1);
+    }
+
+    .floating-btn img {
+      width: 30px;
+      height: 30px;
+    }
+  
+    /* sahity_toast_styles */
+    .toast {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px; 
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 16px;
+    position: fixed;
+    bottom: 20px; 
+    left: 50%; 
+    z-index: 1;
+    font-size: 17px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+
+  .toast.show {
+    visibility: visible;
+    opacity: 1;
+  }
 </style>
 <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
+
   <div class="snowflakes">
     <!-- Snowflake elements -->
     <div class="snowflake" style="left: 10%; animation-duration: 8s; width: 5px; height: 5px;"></div>
@@ -193,10 +273,14 @@
     <div class="particle" style="top: 40%; left: 30%; animation-delay: 2.5s;"></div>
     <div class="particle" style="top: 60%; left: 90%; animation-delay: 1s;"></div>
   </div>
+
   <div class="sahitya-header">
     <img src="images/zlogo.png" alt="Logo">
     <div class="sahitya-title">ZEAL</div>
-    <div class="sahitya-subtitle">Presents Most Awaited Fest</div> 
+    <div class="sahitya-subtitle">Presents Most Awaited Fest</div>
+
+
+   
   </head>
   <!DOCTYPE html>
 <html lang="en">
@@ -208,19 +292,25 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body style="margin: 0; font-family: Arial, sans-serif; background-color: transparent;">
+
   <!-- sahitya_nav -->
   <div style="display: flex; justify-content: center; gap: 10px; margin: 20px 0;">
-    <!-- Lsahitya_locate -->
+
+    <!-- sahitya_locate -->
     <a href="https://maps.app.goo.gl/Mr24rdUaDzMoKbgL7" target="_blank" style="color: white; text-decoration: none; font-size: 16px; padding: 10px 20px; background-color: #0074D9; border-radius: 20px; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
       <i class="fas fa-map-marker-alt" style="margin-right: 8px; font-size: 18px;"></i> Location
     </a>
+
     <!-- sahitya_ig-->
     <a href="https://www.instagram.com/siddharth_college_bscit?igsh=cDRuanlvbjNoZGR3" target="_blank" style="color: white; text-decoration: none; font-size: 16px; padding: 10px 20px; background-color: #E1306C; border-radius: 20px; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
       <i class="fab fa-instagram" style="margin-right: 8px; font-size: 18px;"></i> Instagram
     </a>
+
   </div>
+
 </body>
 </html>
+
 <div style="
   font-family: 'Roboto', sans-serif; 
   color: transparent; 
@@ -327,13 +417,40 @@
       </a>
     </div>
   </div>
-  <a href="https://t.me/skmods_000" target="_blank" style="
+
+  
+  <!-- Sahitya_floating_button -->
+  
+  <div>
+    <a href="https://t.me/skmods_000" target="_blank" class="floating-btn" onclick="showToast()">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram Icon">
+    </a>
+  </div>
+  
+  <!-- sahiya_toast_message -->
+  <div id="toast" class="toast">Thanks for Joining us!</div>
+  
+  <!-- sahitya_Script -->
+  <script>
+    function showToast() {
+      const toast = document.getElementById('toast');
+      toast.classList.add('show');
+      setTimeout(() => {
+        toast.classList.remove('show');
+      }, 3000); //  disappears after 3 seconds
+    }
+  </script>
+  
+  
+  
+  <a href="https://skmods_000" target="_blank" style="
   display: block; 
   text-decoration: none; 
   border-radius: 20px; 
   max-width: 600px; 
   margin: 20px auto; 
   box-shadow: none;">
+  
   <div style="
     font-family: 'Roboto', sans-serif; 
     text-align: center; 
@@ -341,13 +458,18 @@
     border-radius: 20px; 
     padding: 20px; 
     animation: bounce 2s infinite;">
+  
     <p style="font-size: 1rem; margin: 0;">
       <span style="color: #ffdede; font-weight: bold;">
         Designed By Sahitya!
       </span>
     </p>
+   
+  
   </div>
+
 </a>
+
 <style>
 @keyframes bounce {
   0%, 100% {
@@ -358,5 +480,8 @@
   }
 }
 </style>
+
+
+
 </body>
 </html>
