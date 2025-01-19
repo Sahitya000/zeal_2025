@@ -135,44 +135,30 @@
     }
 
     .sahitya-card:active {
-      animation: sahitya-bounce 0.3s;
-    }
+  animation: sahitya-bounce 0.3s;
+}
 
-    @keyframes sahitya-bounce {
+@keyframes sahitya-bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
 
-      0%,
-      100% {
-        transform: translateY(0);
-      }
+.sahitya-card-title {
+  font-size: 14px;
+  font-weight: bold;
+}
 
-      50% {
-        transform: translateY(-10px);
-      }
-    }
-
-    .sahitya-card-title {
-      font-size: 14px;
-      font-weight: bold;
-    }
 
     a {
       text-decoration: none;
       color: black;
     }
 
-    .sahitya-footer a {
-  color: white;
-  text-decoration: underline; 
-  font-family: 'Roboto', sans-serif;
-  padding-bottom: 8px;
-  transition: color 0.3s, transform 0.3s; 
-}
 
-.sahitya-footer a:hover {
-  color: #4CAF50; 
-  text-decoration: none; 
-  transform: translateY(-5px); 
-}
 
       /* sahitya_fall_event*/
       
@@ -260,7 +246,7 @@
   <div style="display: flex; justify-content: center; gap: 10px; margin: 20px 0;">
 
     <!-- Lsahitya_locate -->
-    <a href="https://www.google.com/maps" target="_blank" style="color: white; text-decoration: none; font-size: 16px; padding: 10px 20px; background-color: #0074D9; border-radius: 20px; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+    <a href="https://maps.app.goo.gl/Mr24rdUaDzMoKbgL7" target="_blank" style="color: white; text-decoration: none; font-size: 16px; padding: 10px 20px; background-color: #0074D9; border-radius: 20px; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
       <i class="fas fa-map-marker-alt" style="margin-right: 8px; font-size: 18px;"></i> Location
     </a>
 
@@ -273,6 +259,20 @@
 
 </body>
 </html>
+
+<div style="
+  font-family: 'Roboto', sans-serif; 
+  color: transparent; 
+  text-align: center; 
+  font-size: 1.8rem; 
+  margin: 15px 0; 
+  letter-spacing: 1px; 
+  text-transform: capitalize; 
+  background: linear-gradient(90deg, #4CAF50, #81C784); 
+  -webkit-background-clip: text; 
+  background-clip: text;">
+  Registration onpen for Team's Leader!
+</div>
   <div class="sahitya-cards">
     <div class="sahitya-card">
       <a href="https://forms.gle/Lq2cdSADC7QU8re9A" target="_blank">
@@ -366,9 +366,44 @@
       </a>
     </div>
   </div>
-  <div class="sahitya-footer">
-     <a href="https://t.me/skmods">Powered by Sahitya</a>
+  <a href="https://yourlink.com" target="_blank" style="
+  display: block; 
+  text-decoration: none; 
+  border-radius: 20px; 
+  max-width: 600px; 
+  margin: 20px auto; 
+  box-shadow: none;">
+  
+  <div style="
+    font-family: 'Roboto', sans-serif; 
+    text-align: center; 
+    color: white; 
+    border-radius: 20px; 
+    padding: 20px; 
+    animation: bounce 2s infinite;">
+  
+    <p style="font-size: 1rem; margin: 0;">
+      <span style="color: #ffdede; font-weight: bold;">
+        Designed By Sahitya!
+      </span>
+    </p>
+   
+  
   </div>
+
+</a>
+
+<style>
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+</style>
+
 
 
 </body>
